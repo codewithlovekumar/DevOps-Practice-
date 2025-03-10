@@ -1,0 +1,152 @@
+## **DevOps Daily Tracking Sheet - Day 1**  
+
+**🗓 Date:** 10-03-2025  
+**🎯 Goal:** Master the Fundamentals of Linux for DevOps  
+
+---
+
+### **📌 Linux Commands Practiced Today**
+
+| **Command**       | **Description** |
+|------------------|----------------|
+| `whoami`        | Displays the current logged-in user |
+| `sudo`          | Executes commands as a superuser |
+| `su`            | Switches to another user |
+| `useradd`       | Creates a new user |
+| `passwd`        | Changes a user’s password |
+| `ls`            | Lists files and directories |
+| `ls -l`         | Lists files with detailed information |
+| `ls -a`         | Displays hidden files and directories |
+| `lsblk`         | Shows information about storage devices |
+| `mkdir`         | Creates a new directory |
+| `touch`         | Creates an empty file |
+| `cat`           | Displays file contents |
+| `cp`            | Copies files and directories |
+| `mv`            | Moves or renames files and directories |
+| `rm`            | Deletes files |
+| `rm -r`         | Deletes directories and their contents |
+| `df -h`         | Displays disk space usage in human-readable format |
+| `mount`         | Lists mounted file systems |
+| `head`          | Displays the first 10 lines of a file |
+| `tail`          | Displays the last 10 lines of a file |
+| `find`          | Searches for files and directories |
+| `echo`          | Writes text to a file or standard output |
+
+---
+
+### **🛠 Hands-on Exercises & Tasks**
+
+#### **🔹 Task 1: User Management & Permissions**
+1️⃣ Check the current user:
+   ```bash
+   whoami
+   sudo whoami
+   ```
+2️⃣ Create a new user and set a password:
+   ```bash
+   sudo useradd devops_user
+   sudo passwd devops_user
+   ```
+3️⃣ Switch to the new user:
+   ```bash
+   su - devops_user
+   ```
+
+#### **🔹 Task 2: File & Directory Management**
+1️⃣ Navigate to `/tmp` and create a directory:
+   ```bash
+   cd /tmp
+   mkdir devops_practice
+   ```
+2️⃣ Create multiple files inside the directory:
+   ```bash
+   touch file1.txt file2.txt file3.txt
+   ```
+3️⃣ Copy a file to a backup folder:
+   ```bash
+   mkdir backup
+   cp file1.txt backup/
+   ```
+4️⃣ Rename and move a file:
+   ```bash
+   mv file2.txt renamed_file.txt
+   ```
+5️⃣ Delete a file and restore it using `cp`:
+   ```bash
+   rm renamed_file.txt
+   cp backup/file1.txt renamed_file.txt
+   ```
+
+#### **🔹 Task 3: Disk & Storage Operations**
+1️⃣ Check available disk space:
+   ```bash
+   df -h
+   ```
+2️⃣ List block storage devices:
+   ```bash
+   lsblk
+   ```
+3️⃣ Show partition details:
+   ```bash
+   lsblk -o NAME,SIZE,MOUNTPOINT,FSTYPE
+   ```
+4️⃣ Display all mounted file systems:
+   ```bash
+   mount | column -t
+   ```
+
+#### **🔹 Task 4: File Content Operations**
+1️⃣ Create a file and add text:
+   ```bash
+   echo "Hello, DevOps!" > sample.txt
+   ```
+2️⃣ Display file content:
+   ```bash
+   cat sample.txt
+   ```
+3️⃣ Append text to an existing file:
+   ```bash
+   echo "Welcome to Linux Practice." >> sample.txt
+   ```
+4️⃣ Display the first and last lines of the file:
+   ```bash
+   head -n 2 sample.txt
+   tail -n 1 sample.txt
+   ```
+
+#### **🔹 Task 5: Bonus Challenges**
+1️⃣ **Create multiple directories and files using a loop:**
+   ```bash
+   for i in {1..5}; do
+     mkdir "dir$i"
+     echo "Hello DevOps!" > "dir$i/file$i.txt"
+   done
+   ```
+2️⃣ **Find all `.txt` files in `/tmp/devops_practice/` and display their content:**
+   ```bash
+   find /tmp/devops_practice -name "*.txt" -exec cat {} \;
+   ```
+
+---
+
+### **📌 Summary of Day 1 Learning**
+✅ **Linux Basics Covered:**
+- User roles and permissions (`sudo`, `su`, `useradd`, `passwd`)
+- File & directory management (`mkdir`, `touch`, `cp`, `mv`, `rm`)
+- File content operations (`cat`, `echo`, `head`, `tail`)
+- Storage and disk operations (`lsblk`, `df -h`, `mount`)
+- Searching and scripting (`find`, `for` loops)
+
+---
+
+### **🚀 Next Steps**
+1️⃣ **Track Progress on GitHub**
+   - Create a **DevOps Learning Repository**.
+   - Upload daily exercises with a **README.md**.
+
+2️⃣ **Share Learning on LinkedIn**
+   - Engage with recruiters & professionals.
+   - Showcase daily progress for visibility.
+
+📢 **Keep Learning & Stay Consistent!** 🚀
+
