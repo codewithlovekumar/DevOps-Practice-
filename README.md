@@ -16,6 +16,5 @@ I need your support! 🙌
  If you have any advice, resources, project ideas, or internship/job opportunities, I would deeply appreciate your guidance. Your support means a lot to me!
 I respect and value everyone who helps me in this journey. Let’s connect, learn, and grow together! 🚀
 Follow my progress daily! I will also push everything to GitHub so that anyone can follow along.
-👉 GitHub Repository: https://lnkd.in/gFcFhxP8
  👉 hashtag#90DaysOfDevOps
 Let’s make this journey count! 💪🔥
